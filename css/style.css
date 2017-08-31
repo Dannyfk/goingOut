@@ -16,3 +16,11 @@
 #friendList {
     display: inline-block;
 }
+
+.true {
+    color:green;
+}
+
+.false {
+    color:red;
+}

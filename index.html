@@ -26,7 +26,7 @@
 <section id="mainContent">
     <img src="images/profilePicturePlaceholder.png">
     
-    <form action="updateProfile.php" method="post">
+<form>
         <input type="checkbox" name="goingOut" value="out" id="goingOut">Going out?<br>
         Location:
         <input type="text" name="location" id="location" readonly><br>
@@ -36,16 +36,13 @@
 </section>
     
 <aside id="friendList">
-    <ul>
+    <ul id="friendListObject">
         <li v-for="item in items">
-            {{item.out}}
             {{item.firstName}}
-            <br>
-            {{item.outPlace}}
         </li>
         <a href="#">Add Friend</a>
     </ul>
-    </aside>    
+</aside>     
     
 </main>
 
