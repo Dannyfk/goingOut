@@ -1,3 +1,7 @@
+body {
+    background-color:azure;
+}
+
 #mainContent {
     display: inline-block;
     width:600px;
@@ -23,4 +27,18 @@
 
 .false {
     color:red;
+}
+
+#friendListObject {
+    border: solid black 1px;
+
+}
+
+#friendObject {
+    border-bottom: solid black 0.5px;
+    padding: 10px;
+}
+
+#addFriend {
+    padding: 10px;
 }

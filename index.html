@@ -18,7 +18,7 @@
 <aside id="navList">
     <ul>
         <li v-for="item in items">
-           <a>{{item}}</a> 
+           <a href="#">{{item}}</a> 
         </li>
     </ul>
     </aside>
@@ -37,12 +37,14 @@
     
 <aside id="friendList">
     <ul id="friendListObject">
-        <li v-for="item in items">
+        <li id="friendObject" v-for="item in items">
             {{item.firstName}}
         </li>
-        <a href="#">Add Friend</a>
+        <a id="addFriend" href="#">Add Friend</a>
     </ul>
-</aside>     
+</aside> 
+    
+    
     
 </main>
 
