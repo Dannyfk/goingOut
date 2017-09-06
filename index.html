@@ -12,46 +12,46 @@
 </head>
 <!-- body start -->
 <body id="frontPageBody">
-    
     <!-- Nav include -->
 <main>
 <aside id="navList">
-    <ul>
-        <li v-for="item in items">
-           <a href="#">{{item}}</a> 
-        </li>
-    </ul>
+    <nav>
+        <ul>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/Profile">Profile</router-link></li>
+            <li><router-link to="/CityMap">City/Map</router-link></li>
+            <li><router-link to="/FindOthers">Find others</router-link></li>
+            <li><router-link to="/Friends">Friends</router-link></li>
+        </ul>
+      </nav>
+      <router-view></router-view>
     </aside>
-    
-<section id="mainContent">
-    <img src="images/profilePicturePlaceholder.png">
-    
-<form>
-        <input type="checkbox" name="goingOut" value="out" id="goingOut">Going out?<br>
-        Location:
-        <input type="text" name="location" id="location" readonly><br>
-        <input type="submit" value="Update">
-</form>
 
-</section>
-    
 <aside id="friendList">
-    <ul id="friendListObject">
+<button @click="show = !show">
+    Toggle Friendlist
+  </button>
+  <transition name="slide-fade">
+
+    <ul id="friendListObject" v-if="show">
         <li id="friendObject" v-for="item in items">
             {{item.firstName}}
         </li>
         <a id="addFriend" href="#">Add Friend</a>
     </ul>
-</aside> 
-    
+        </transition>
+</aside>   
     
     
 </main>
 
-<script src="js/vue.js"></script>   
+<script src="js/vue.js"></script>  
+<script src="js/vue-router.min.js"></script>
 <script src="js/personScript.js"></script>
 <script src="js/frameWorkScript.js"></script>
 <script src="js/frontpageFormScript.js"></script>
+<script src="js/vueRouterScript.js"></script>
+    <script>function initMap() {var veb = {lat: 52.540355, lng: 13.405625};var map = new google.maps.Map(document.getElementById('map'), {zoom: 15,center: veb});var marker = new google.maps.Marker({position: veb,map: map});}</script> <script async defersrc='https://maps.googleapis.com/maps/api/js?key=AIzaSyAol_KTNiAmD0EMoWjzM_N8XMM7tt_3Nbk&callback=initMap'></script>
     
 </body>
 </html>

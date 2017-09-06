@@ -13,6 +13,7 @@ function person(first, last, age, gender) {
 }
 
 //Creating some testing values
+var testPerson = new person ("Me", "Test", 25, "male");
 var testPerson1 = new person("Bruce","Wayne", 30, "male");
 testPerson1.out = true;
 testPerson1.outPlace = "Bar";
@@ -22,4 +23,4 @@ var testPerson4 = new person("Person2", "Lastname", 30, "male");
 var testPerson5 = new person("Person3", "Lastname", 30, "male");
 testPerson5.out = true;
 testPerson5.outPlace = "Disco";
-var friendList =[testPerson1, testPerson2, testPerson3, testPerson4, testPerson5];
+var friendList =[testPerson, testPerson1, testPerson2, testPerson3, testPerson4, testPerson5];
