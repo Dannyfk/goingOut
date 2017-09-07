@@ -1,7 +1,7 @@
 
 #mainContent {
-    display: inline-block;
     width:600px;
+    display: inline-block;
     text-align: center;
     border:solid grey 0.5px;
 }
@@ -50,6 +50,8 @@ nav ul {
     padding: 10px;
 }
 
+/* animations */
+
 .slide-fade-enter-active {
   transition: all .3s ease;
 }
@@ -60,4 +62,17 @@ nav ul {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(10px);
   opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .60s;
+}
+
+.fade-enter-active {
+  transition-delay: .50s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
