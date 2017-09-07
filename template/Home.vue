@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: 'foo',
+  name: 'home',
 };
 </script>

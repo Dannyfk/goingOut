@@ -1,7 +1,9 @@
+
 #mainContent {
     display: inline-block;
     width:600px;
     text-align: center;
+    border:solid grey 0.5px;
 }
 
 #mainContent img {
@@ -13,8 +15,17 @@
     display: inline-block;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
 #friendList {
     display: inline-block;
+}
+
+#introText {
+    width:600px;
+    text-align: center;
 }
 
 .true {
