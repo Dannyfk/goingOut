@@ -1,9 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 12%;
+  grid-gap: 5px;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 10px;
+}
+
 
 #mainContent {
-    width:600px;
     display: inline-block;
     text-align: center;
     border:solid grey 0.5px;
+    min-width: 80%;
+    min-height: 200px;
 }
 
 #mainContent img {
@@ -11,8 +23,19 @@
     height:200px;
 }
 
+#mainContent #maps {
+    max-width:480px;
+    max-height:240px;
+    width: 80%;
+    height: 80%;
+}
+
+#contentWindow {
+    
+}
+
 #navList {
-    display: inline-block;
+    display: block;
 }
 
 nav ul {
@@ -21,10 +44,10 @@ nav ul {
 
 #friendList {
     display: inline-block;
+    min-width: 120px;
 }
 
 #introText {
-    width:600px;
     text-align: center;
 }
 
@@ -48,6 +71,12 @@ nav ul {
 
 #addFriend {
     padding: 10px;
+}
+
+#addFriendsWindow ul li p{
+    max-width: 100px;
+    display:inline-block;
+    margin-right: 10px;
 }
 
 /* animations */

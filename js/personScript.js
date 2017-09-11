@@ -24,3 +24,7 @@ var testPerson5 = new person("Person3", "Lastname", 30, "male");
 testPerson5.out = true;
 testPerson5.outPlace = "Disco";
 var friendList =[testPerson, testPerson1, testPerson2, testPerson3, testPerson4, testPerson5];
+
+function addToFriendlist(person){
+    friendList.push(person);
+}

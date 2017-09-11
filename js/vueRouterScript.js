@@ -3,7 +3,7 @@ var Home = {template: "<section id='mainContent'><img src='images/profilePicture
 
 var Profile = { template: "<section id='mainContent'><form id='profile Form'action='#'>FirstName:<input type='text'name='firstName'id='firstName'><br>LastName:<input type='text'name='lastName'id='lastName'><br>Age:<input type='text'name='age'id='age'><br>Interest:<input type='text'name='interest'id='interest'><br>FavoritPlace:<input type='text'name='favoritPlace'id='favoritPlace'><br><input type='submit'value='Update'></form></section>" };
 
-var CityMap = { template: "<section id='mainContent'><h1>City Map</h1></section>" };
+var CityMap = { template: "<section id='mainContent'><h1>City Map</h1><img id='maps' src='images/googleMaps.jpg'></section>" };
 
 var FindOthers = { template: "<section id='mainContent'><h1>FindOthers</h1></section>" };
 
@@ -19,6 +19,6 @@ var Friends = { template: "<section id='mainContent'><h1>Friends</h1></section>"
         routes: routes,
       });
       var app = new Vue({
-        el: '#navList',
+        el: '#routerWrapper',
         router: router
       });

@@ -1,0 +1,18 @@
+<section id="addFriendsWindow" v-cloak>
+
+    <div class="bar">
+        <!-- Create a binding between the searchString model and the text field -->
+
+        <input type="text" v-model="searchString" placeholder="Search for friends" />
+    </div>
+
+    <ul>
+        <!-- Render a li element for every entry in the computed filteredPersons array. -->
+
+        <li v-for="article in filteredArticles">
+            <p>{{article.firstName}} {{article.lastName}}</p><button id="addFriendButton">add(not working)</button>
+            
+        </li>
+    </ul>
+
+</section>
